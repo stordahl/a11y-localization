@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!-- Include the JS script file: -->
+<script src="https://web-assets.stylitics.com/v3-hotspots/latest/hotspots.release.js"></script> 
+
+<!--Create the widget container. -->
+<!-- You control the id of this element, so the id can be anything you want. -->
+<div id="stylitics-widget-container"></div>
+
+<!-- Initialize a widget object attached to a DOM element on your page. -->
+<!-- Afterward, when you are ready, call .start() on the object. -->
+<script>
+  let widgetInstance = new StyliticsHotspotsWidget( "express", "stylitics-widget-container", { 
+      api: { 
+        tags: "new_arrival_demo_gallery",
+        min: 3, 
+        max: 6,
+      },
+  }) 
+  widgetInstance.start(); 
+</script>
+</body>
+</html>
